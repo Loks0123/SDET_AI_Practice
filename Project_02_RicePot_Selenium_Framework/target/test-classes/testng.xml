@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Salesforce Login Automation Suite" verbose="1" parallel="false">
+
+    <listeners>
+        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+    </listeners>
+
+    <test name="Valid Login Test Scenarios">
+        <classes>
+            <class name="com.salesforce.tests.ValidLoginTest"/>
+        </classes>
+    </test>
+
+    <test name="Invalid Login Test Scenarios">
+        <classes>
+            <class name="com.salesforce.tests.InvalidLoginTest"/>
+        </classes>
+    </test>
+
+</suite>
